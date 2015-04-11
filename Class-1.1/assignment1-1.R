@@ -1,0 +1,10 @@
+colnames(tab)
+tab$sleep_total
+c(tab$sleep_total,1000)
+plot(tab$brainwt,tab$sleep_total)
+plot(tab$brainwt,tab$sleep_total,log="x")
+summary(tab$sleep_total)
+tab[c(1,2)]
+tab[tab$sleep_total>18,]
+tab$sleep_total[c(1,2)]
+mean(tab$sleep_total[tab$sleep_total>18])
